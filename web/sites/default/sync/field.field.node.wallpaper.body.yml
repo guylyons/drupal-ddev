@@ -1,0 +1,24 @@
+uuid: b73bf914-c877-42f4-b7cd-06b62634357f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.wallpaper
+  module:
+    - text
+id: node.wallpaper.body
+field_name: body
+entity_type: node
+bundle: wallpaper
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

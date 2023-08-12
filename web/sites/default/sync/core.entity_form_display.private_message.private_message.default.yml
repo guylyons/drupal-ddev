@@ -1,0 +1,38 @@
+uuid: 764954af-3397-4547-87d6-6f958e9308aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.private_message.private_message.field_subject
+  module:
+    - private_message
+    - text
+_core:
+  default_config_hash: NgKTJ48tKixxHdgcHn2dYtLGAjd05npp8pylrqvU0lE
+id: private_message.private_message.default
+targetEntityType: private_message
+bundle: private_message
+mode: default
+content:
+  field_subject:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  members:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: Message
+    third_party_settings: {  }
+hidden: {  }

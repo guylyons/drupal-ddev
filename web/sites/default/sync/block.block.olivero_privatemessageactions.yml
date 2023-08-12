@@ -1,0 +1,20 @@
+uuid: b78acab5-5d36-444e-a361-09ae4a84092c
+langcode: en
+status: true
+dependencies:
+  module:
+    - private_message
+  theme:
+    - olivero
+id: olivero_privatemessageactions
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: private_message_actions_block
+settings:
+  id: private_message_actions_block
+  label: 'Private Message Actions'
+  label_display: visible
+  provider: private_message
+visibility: {  }
