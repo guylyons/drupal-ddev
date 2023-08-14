@@ -40,6 +40,7 @@ module:
   flexible_permissions: 0
   gnode: 0
   group: 0
+  groupmedia: 0
   help: 0
   history: 0
   image: 0
@@ -67,12 +68,10 @@ module:
   path: 0
   path_alias: 0
   phpass: 0
-  private_message: 0
   responsive_image: 0
   search_api: 0
   search_api_solr: 0
   search_api_solr_admin: 0
-  search_api_solr_devel: 0
   serialization: 0
   settings_tray: 0
   shortcut: 0
@@ -87,6 +86,7 @@ module:
   user: 0
   variationcache: 0
   views_bulk_operations: 0
+  views_field_view: 0
   views_ui: 0
   pathauto: 1
   views: 10
