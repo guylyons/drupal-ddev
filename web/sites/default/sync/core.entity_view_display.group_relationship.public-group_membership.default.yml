@@ -1,0 +1,25 @@
+uuid: 06330a61-afa4-4d11-aed0-e15e28f40dc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_relationship.public-group_membership.group_roles
+    - group.relationship_type.public-group_membership
+id: group_relationship.public-group_membership.default
+targetEntityType: group_relationship
+bundle: public-group_membership
+mode: default
+content:
+  group_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden:
+  entity_id: true
+  langcode: true
+  search_api_excerpt: true
+  uid: true

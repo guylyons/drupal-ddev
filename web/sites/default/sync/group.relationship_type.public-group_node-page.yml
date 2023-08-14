@@ -1,0 +1,17 @@
+uuid: e3883709-d596-403c-9e1f-bf4fdb174919
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.public
+    - node.type.page
+  module:
+    - gnode
+    - node
+id: public-group_node-page
+group_type: public
+content_plugin: 'group_node:page'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

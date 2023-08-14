@@ -1,0 +1,15 @@
+uuid: e9dcd417-5747-4183-8004-30b138ca6341
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.public
+    - user.role.administrator
+id: public-admin_out
+label: Administrator
+weight: 101
+admin: true
+scope: outsider
+global_role: administrator
+group_type: public
+permissions: {  }

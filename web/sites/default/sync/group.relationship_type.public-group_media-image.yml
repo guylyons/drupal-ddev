@@ -1,0 +1,18 @@
+uuid: 669d11d8-db40-4e03-a7ec-4dd24b2ae83a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.public
+    - media.type.image
+  module:
+    - groupmedia
+    - media
+id: public-group_media-image
+group_type: public
+content_plugin: 'group_media:image'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false
+  tracking_enabled: 0

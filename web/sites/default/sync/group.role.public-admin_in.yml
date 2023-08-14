@@ -1,0 +1,15 @@
+uuid: 8ccb564d-6e9c-47f3-9e6d-b4a71fd1c0fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.public
+    - user.role.administrator
+id: public-admin_in
+label: Administrator
+weight: 102
+admin: true
+scope: insider
+global_role: administrator
+group_type: public
+permissions: {  }
