@@ -1,5 +1,0 @@
-name: Testing Module
-type: module
-description: An example module meant for experimentation
-package: Custom
-core_version_requirement: ^9 || ^10
