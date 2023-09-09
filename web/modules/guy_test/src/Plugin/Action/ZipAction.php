@@ -19,13 +19,13 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * Zip file action with default confirmation form.
  *
  * @Action(
- *   id = "npin_vbo_zip_file",
+ *   id = "zip_file",
  *   label = @Translation("Zip selected files"),
  *   type = "media",
  *   confirm = FALSE,
  * )
  */
-class FileZipAction extends ViewsBulkOperationsActionBase implements ContainerFactoryPluginInterface {
+class ZipAction extends ViewsBulkOperationsActionBase implements ContainerFactoryPluginInterface {
 
   /**
    * Current User.
@@ -159,12 +159,12 @@ class FileZipAction extends ViewsBulkOperationsActionBase implements ContainerFa
           $file = $this->entityTypeManager->getStorage('file')->load($fid);
           $uri = $file->getFileUri();
           $absolute_path = $this->fileSystem->realpath($uri);
-          try {
+          if (file_exists($uri)) {
             $this->zipArchive->addFile($absolute_path, $file->getFilename());
             $results[] = $file->getFilename();
-          } catch (\Exception $e) {
+          } else {
             // Handle missing files.
-            $this->logger->error('An error occurred: ' . $e->getMessage());
+            $this->logger->error('FileZipAction.php: File not available during ZipArchive->addfile(): ' . $absolute_path);
           }
         }
       }
