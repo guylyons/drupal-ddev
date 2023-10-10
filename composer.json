@@ -25,6 +25,7 @@
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
         "drupal/diff": "^1.1",
+        "drupal/dropzonejs": "^2.8",
         "drupal/eca": "^1.1",
         "drupal/facets": "^2.0",
         "drupal/flag": "^4.0@beta",
