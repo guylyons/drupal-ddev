@@ -1,6 +1,11 @@
 <?php
 
+use Drupal\guy_test\Form\RemoteUploadForm;
+
 /**
- * @file
- * Primary module hooks for Guy Test module.
+ * Implements hook_media_source_info_alter().
+ *
  */
+function guy_test_media_source_info_alter(array &$sources) {
+  $sources['image']['forms']['media_library_add'] = RemoteUploadForm::class;
+}
